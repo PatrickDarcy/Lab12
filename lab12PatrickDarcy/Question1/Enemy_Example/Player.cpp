@@ -15,7 +15,7 @@ Player::Player() // default constructor
 	setColour();  // set the colour of the rectangle
 	setBody();  // set the size of the rectangle
 
-	speed = 5; // the average speed
+	speed = 10; // the average speed
 	direction = (rand() % 2) + 1;        // Generates a random number between 1 and 2
 	lives = 3;
 }
@@ -49,14 +49,46 @@ void Player::setPosition(int xPos, int yPos)  // set the position of the player 
 
 void Player::move()
 {
-	if (body.getPosition().x + PLAYER_SIZE > SCREEN_WIDTH)
+
+
+	if (direction == EAST)
 	{
-		speed = -(speed);
+		speed = 5;
+		if (body.getPosition().x + PLAYER_SIZE > SCREEN_WIDTH)
+		{
+			direction = WEST;
+		}
 	}
-	else if (body.getPosition().x < 0)
+	else if (direction == WEST)
 	{
-		speed = -(speed);
+		speed = -5;
+
+		if (body.getPosition().x < 0)
+		{
+			direction = EAST;
+		}
 	}
+
 	body.setPosition(body.getPosition().x + speed, body.getPosition().y);
+}
+
+void Player::changeDirection()
+{
+	if (direction == WEST)
+	{
+		direction = EAST;
+	}
+	else if (direction == EAST)
+	{
+		direction = WEST;
+	}
+}
+
+void Player::changeColour()
+{
+	colourB = rand() % 255;
+	colourR = rand() % 255;
+	colourG = rand() % 255;
+	body.setFillColor(sf::Color(colourR, colourG, colourB, 255));
 }
 

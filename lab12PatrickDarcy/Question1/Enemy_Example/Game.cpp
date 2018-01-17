@@ -123,11 +123,11 @@ void Game::update()
 	}
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::C))
 	{
-		// changes the colour of the player rectangle when C is pressed
+		myPlayer.changeColour();
 	}
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::D))
 	{
-		// changes the direction the player is moving when D is pressed
+		myPlayer.changeDirection();
 	}
 
 	myPlayer.move();

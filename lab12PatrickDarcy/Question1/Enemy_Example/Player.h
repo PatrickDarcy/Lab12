@@ -13,6 +13,9 @@ class Player
 	int speed;   // the speed that the player moves
 	int lives;    // the number of lives
 	int direction; // is the player moving east or west
+	int colourB;
+	int colourR;
+	int colourG;
 
 public:	  // declaration of member functions	
 
@@ -23,6 +26,7 @@ public:	  // declaration of member functions
 	void setPostion();
 	void setPosition(int xPos, int yPos);
 	void move();
-
-
+	void changeDirection();
+	void changeColour();
+	
 };
