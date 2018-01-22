@@ -13,6 +13,7 @@ class Player
 	int speed;   // the speed that the player moves
 	int lives;    // the number of lives
 	int direction; // is the player moving east or west
+	int size = 80;
 	int colourB;
 	int colourR;
 	int colourG;
@@ -28,5 +29,6 @@ public:	  // declaration of member functions
 	void move();
 	void changeDirection();
 	void changeColour();
+	void changeSize();
 	
 };

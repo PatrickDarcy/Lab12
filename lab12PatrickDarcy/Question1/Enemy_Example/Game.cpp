@@ -119,7 +119,7 @@ void Game::update()
 
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::I))
 	{
-		// increases the size of the player rectangle when I is pressed
+		myPlayer.changeSize();
 	}
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::C))
 	{

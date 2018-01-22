@@ -3,9 +3,6 @@ c:\users\c00226157\documents\github\lab12\lab12patrickdarcy\question1\enemy_exam
 c:\users\c00226157\documents\github\lab12\lab12patrickdarcy\question1\enemy_example\player.cpp(12): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
 c:\users\c00226157\documents\github\lab12\lab12patrickdarcy\question1\enemy_example\player.cpp(25): warning C4244: 'argument': conversion from 'const int' to 'float', possible loss of data
 c:\users\c00226157\documents\github\lab12\lab12patrickdarcy\question1\enemy_example\player.cpp(46): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-  Generating Code...
-  Compiling...
-  Game.cpp
-  Generating Code...
+c:\users\c00226157\documents\github\lab12\lab12patrickdarcy\question1\enemy_example\player.cpp(97): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
   Enemy_Example.vcxproj -> C:\Users\C00226157\Documents\GitHub\Lab12\lab12PatrickDarcy\Question1\Debug\PlayerProject.exe
   Enemy_Example.vcxproj -> C:\Users\C00226157\Documents\GitHub\Lab12\lab12PatrickDarcy\Question1\Debug\PlayerProject.pdb (Partial PDB)

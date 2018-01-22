@@ -54,7 +54,7 @@ void Player::move()
 	if (direction == EAST)
 	{
 		speed = 5;
-		if (body.getPosition().x + PLAYER_SIZE > SCREEN_WIDTH)
+		if (body.getPosition().x + size > SCREEN_WIDTH)
 		{
 			direction = WEST;
 		}
@@ -62,7 +62,6 @@ void Player::move()
 	else if (direction == WEST)
 	{
 		speed = -5;
-
 		if (body.getPosition().x < 0)
 		{
 			direction = EAST;
@@ -90,5 +89,11 @@ void Player::changeColour()
 	colourR = rand() % 255;
 	colourG = rand() % 255;
 	body.setFillColor(sf::Color(colourR, colourG, colourB, 255));
+}
+
+void Player::changeSize()
+{
+	size++;
+	body.setSize(sf::Vector2f(size, size));
 }
 
