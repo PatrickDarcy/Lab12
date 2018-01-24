@@ -12,7 +12,7 @@
 //	4. When the user presses the ‘d’ key on the keyboard, the player should move in the opposite direction.
 
 // ---------------------------------------------------------------------------
-// Known Bugs:
+// Known Bugs:none
 // ?
 
 //////////////////////////////////////////////////////////// 
@@ -117,15 +117,15 @@ void Game::update()
 {
 	// checks what  keys have been pressed  
 
-	if (sf::Keyboard::isKeyPressed(sf::Keyboard::I))
+	if (sf::Keyboard::isKeyPressed(sf::Keyboard::I))// increases the players size
 	{
 		myPlayer.changeSize();
 	}
-	if (sf::Keyboard::isKeyPressed(sf::Keyboard::C))
+	if (sf::Keyboard::isKeyPressed(sf::Keyboard::C))// changes the players colour
 	{
 		myPlayer.changeColour();
 	}
-	if (sf::Keyboard::isKeyPressed(sf::Keyboard::D))
+	if (sf::Keyboard::isKeyPressed(sf::Keyboard::D))// changes the players direction
 	{
 		myPlayer.changeDirection();
 	}

@@ -21,22 +21,58 @@ void CardDeck::dealCard()
 {
 	cardNum = rand() % 13 + 1;
 	cardSymbol = rand() % 4 + 1;
-
+// Converts the random numbers generated into card faces and suits
 	if (cardNum == ACE)
 	{
-		cardFace = "Ace";
+		cardFace = " Ace";
+	}
+	if (cardNum == 2)
+	{
+		cardFace = " 2";
+	}
+	if (cardNum == 3)
+	{
+		cardFace = " 3";
+	}	
+	if (cardNum == 4)
+	{
+		cardFace = " 4";
+	}	
+	if (cardNum == 5)
+	{
+		cardFace = " 5";
+	}	
+	if (cardNum == 6)
+	{
+		cardFace = " 6";
+	}	
+	if (cardNum == 7)
+	{
+		cardFace = " 7";
+	}	
+	if (cardNum == 8)
+	{
+		cardFace = " 8";
+	}	
+	if (cardNum == 9)
+	{
+		cardFace = " 9";
+	}	
+	if (cardNum == 10)
+	{
+		cardFace = " 10";
 	}
 	if (cardNum == JACK)
 	{
-		cardFace = "Jack";
+		cardFace = " Jack";
 	}
 	if (cardNum == QUEEN)
 	{
-		cardFace = "Queen";
+		cardFace = " Queen";
 	}
 	if (cardNum == KING)
 	{
-		cardFace = "King";
+		cardFace = " King";
 	}	
 	if (cardSymbol == 1)
 	{

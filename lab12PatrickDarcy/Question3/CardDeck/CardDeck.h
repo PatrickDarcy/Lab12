@@ -10,6 +10,7 @@ class CardDeck
 	std::string cardFace; // the number of the card eg Ace, 3, Queen etc
 	int cardNum; // random number for the face
 	int cardSymbol; // random number for the suit
+	// Different card constants
 	const int ACE = 1;
 	const int JACK = 11;
 	const int QUEEN = 12;

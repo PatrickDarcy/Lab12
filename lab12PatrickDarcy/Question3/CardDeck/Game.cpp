@@ -8,7 +8,7 @@
 // The program should generate a new card when the left key is pressed.
 // The program should display the card suit and face on the screen. 
 // ---------------------------------------------------------------------------
-// Known Bugs: 
+// Known Bugs: None
 
 //////////////////////////////////////////////////////////// 
 // include correct library file for release and debug versions
@@ -122,6 +122,6 @@ void Game::update()
 	// get keyboard input
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left))  // generate a new card
 	{
-
+		aCardDeck.dealCard();
 	}
 }

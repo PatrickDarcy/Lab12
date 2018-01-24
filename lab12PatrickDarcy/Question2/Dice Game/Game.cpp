@@ -113,7 +113,7 @@ void Game::update()
 // handles input in the game
 {
 	// get keyboard input
-	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left))
+	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left))// generates a new dice roll when you press the left arrow
 	{
 		gameDice.rollDice();
 	}
